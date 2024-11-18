@@ -1,0 +1,97 @@
+/* .child-1 {
+  width: 50%;
+  color: white;
+  background-image: url(/src/img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+/* .grandChild {
+  width: 100%;
+  height: 100%;
+  background-color: #032b5600;
+} */
+.parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.child-2 {
+  width: 50% !important;
+  height: 100%;
+  color: #032b56;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.SignInButtonDiv {
+  display: flex;
+  justify-content: center;
+}
+.SignInButton {
+  cursor: pointer;
+  position: relative;
+  padding: 15px 24px;
+  font-size: 18px;
+  color: #032b56;
+  border: 2px solid #032b56;
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: hidden;
+  width: 50%;
+}
+
+.SignInButton::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: white;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.SignInButton:hover::before {
+  scale: 3;
+}
+
+.SignInButton:hover {
+  color: #212121;
+  scale: 1.1;
+  box-shadow: 0 0px 20px #032b56;
+}
+
+.SignInButton:active {
+  scale: 1;
+}
+.signinBtn {
+  color: #032b56;
+}
+@media (max-width: 768px) {
+  /* .child-1 {
+    margin-top: 2rem;
+    width: 100% !important;
+  } */
+  .child-2 {
+    width: 100% !important;
+  }
+}
+@media (max-width: 320px) {
+  /* .parent {
+    flex-direction: column !important;
+    margin: 1rem !important;
+  }
+  .child-1 {
+    margin-top: 4rem !important;
+    width: 100% !important;
+  } */
+  .child-2 {
+    width: 100% !important;
+  }
+}
