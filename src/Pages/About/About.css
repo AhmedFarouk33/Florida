@@ -1,0 +1,447 @@
+.aboutMain {
+  background-image: url(/src/Img/10.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .aboutMainText {
+    background-color: #032b5680;
+  }
+  .aboutMainText h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+    color: aliceblue;
+    padding-top: 7rem;
+    padding-left: 7rem;
+  }
+  p {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: aliceblue;
+    padding-top: 1rem;
+    padding-left: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+.aboutCompany {
+  margin: 5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+
+  .aboutCompanyImg {
+    background-image: url(/src/Img/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    border-radius: 0.4rem;
+  }
+  .aboutCompanyText {
+    max-width: 45%;
+    h6 {
+      color: #236bf8;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      font-family: inherit;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    h2 {
+      color: #032b56;
+      font-size: 3rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      font-family: inherit;
+      font-weight: bolder;
+      line-height: 1.2;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    .idea {
+      background-color: #e6eaef;
+      margin: 1rem 0;
+      display: flex;
+
+      .ideaIcon {
+        background-image: url(/src/Img/icons8-idea-32.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 40px;
+        margin: 20px;
+      }
+      .ideaText {
+        color: #032b56;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.whatWeDo {
+  margin-top: 6rem;
+  background-image: url(/src/Img/5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .whatWeDoColor {
+    background-color: rgba(255, 255, 255, 0.85);
+    .whatWeDoLorem {
+      margin-left: 5rem;
+      padding: 3em;
+
+      p {
+        color: #236bf8;
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+      }
+      h2 {
+        color: #032b56;
+        font-size: 3rem;
+        margin-top: 0.5rem;
+        font-family: inherit;
+        font-weight: bolder;
+        line-height: 1.2;
+      }
+    }
+  }
+  .whatWeDoCards {
+    margin: 0rem 3rem 3rem 3rem;
+    padding: 1rem 3rem 3rem 3rem;
+    gap: 1.5rem;
+    .whatWeDoCard1 {
+      background-color: white;
+      border-radius: 10px;
+      padding: 3rem;
+      gap: 1rem;
+      text-align: center;
+    }
+    .whatWeDoCard2 {
+      background-color: white;
+      border-radius: 10px;
+      padding: 3rem;
+      gap: 1rem;
+      text-align: center;
+    }
+    .whatWeDoCard3 {
+      background-color: white;
+      border-radius: 10px;
+      padding: 3rem;
+      gap: 1rem;
+      text-align: center;
+    }
+  }
+}
+.claimPromo {
+  background-image: url(/src/Img/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .claimPromoColor {
+    background-color: #032b5680;
+    .claimPromoText {
+      padding: 8rem;
+      width: 50%;
+      h1 {
+        font-weight: bolder;
+        color: white;
+      }
+      p {
+        color: white;
+      }
+    }
+  }
+}
+.c-button {
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0.9em 1.6em;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+}
+
+.c-button--gooey {
+  color: #032b56;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 4px solid #032b56;
+  border-radius: 0;
+  position: relative;
+  transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs {
+  height: 100%;
+  filter: url(#goo);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -3px;
+  right: -1px;
+  z-index: -1;
+}
+
+.c-button--gooey .c-button__blobs div {
+  background-color: #032b56;
+  width: 34%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  transform: scale(1.4) translateY(125%) translateZ(0);
+  transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(1) {
+  left: -5%;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(2) {
+  left: 30%;
+  transition-delay: 60ms;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(3) {
+  left: 66%;
+  transition-delay: 25ms;
+}
+
+.c-button--gooey:hover {
+  color: #fff;
+}
+
+.c-button--gooey:hover .c-button__blobs div {
+  transform: scale(1.4) translateY(0) translateZ(0);
+}
+.smartWayImg {
+  background-image: url(/src/Img/bg_memphis.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .smartWay {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .smartWayText {
+    margin: 8rem 0rem;
+    max-width: 60%;
+    .h1 {
+      font-size: 3.5rem;
+      color: #032b56;
+      font-weight: bolder;
+      text-align: center;
+    }
+  }
+}
+.Insight {
+  padding: 6rem;
+  background-color: #e6eaef;
+  h2 {
+    color: #032b56;
+    margin: 2rem;
+  }
+  .InsightCards {
+    .card {
+      color: #032b56;
+      padding: 0px !important;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .aboutMain {
+    .aboutMainText h1 {
+      font-size: 3rem;
+      padding-left: 5rem;
+    }
+    p {
+      font-size: 1.5rem;
+      padding-top: 0.5rem;
+      padding-left: 5rem;
+    }
+  }
+  .aboutCompany {
+    margin: 2rem;
+    gap: 2rem;
+
+    .aboutCompanyText {
+      max-width: 60%;
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+  .whatWeDo {
+    margin-top: 2rem;
+    .whatWeDoColor {
+      .whatWeDoLorem {
+        margin-left: 3rem;
+        padding: 2rem;
+        h2 {
+          font-size: 2rem;
+        }
+      }
+    }
+    .whatWeDoCards {
+      margin: 0rem 1rem 1rem 1rem;
+      padding: 0rem 1rem 1rem 1rem;
+      gap: 1rem;
+      .whatWeDoCard1 {
+        padding: 2rem;
+        gap: 0.6rem;
+      }
+      .whatWeDoCard2 {
+        padding: 2rem;
+        gap: 0.6rem;
+      }
+      .whatWeDoCard3 {
+        padding: 2rem;
+        gap: 0.6rem;
+      }
+    }
+  }
+  .claimPromo {
+    .claimPromoColor {
+      .claimPromoText {
+        padding: 4rem;
+        width: 50%;
+        h1 {
+          font-weight: bolder;
+          color: white;
+        }
+        p {
+          color: white;
+        }
+      }
+    }
+  }
+  .smartWayImg {
+    .smartWayText {
+      margin: 5rem 0rem;
+      max-width: 80%;
+      .h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .aboutMain {
+    .aboutMainText h1 {
+      font-size: 2.5rem;
+      padding-left: 2rem;
+    }
+    p {
+      font-size: 1.2rem;
+      padding-top: 0.3rem;
+      padding-left: 2rem;
+      padding-right: 3rem;
+    }
+  }
+  .aboutCompany {
+    flex-direction: column-reverse;
+    .aboutCompanyImg {
+      width: 100%;
+    }
+    .aboutCompanyText {
+      min-width: 100%;
+    }
+  }
+  .whatWeDo {
+    margin-top: 1rem;
+    .whatWeDoColor {
+      .whatWeDoLorem {
+        margin-left: 1rem;
+        padding: 1rem;
+        h2 {
+          font-size: 2rem;
+        }
+      }
+    }
+    .whatWeDoCards {
+      margin: 0rem 1rem 1rem 1rem;
+      padding: 0rem 1rem 1rem 1rem;
+      gap: 1rem;
+      flex-direction: column;
+      .whatWeDoCard1 {
+        padding: 2rem;
+        gap: 0.6rem;
+      }
+      .whatWeDoCard2 {
+        padding: 2rem;
+        gap: 0.6rem;
+      }
+      .whatWeDoCard3 {
+        padding: 2rem;
+        gap: 0.6rem;
+      }
+    }
+  }
+  .claimPromo {
+    .claimPromoColor {
+      .claimPromoText {
+        padding: 2.5rem;
+        width: 80%;
+        h1 {
+          font-weight: bolder;
+          color: white;
+        }
+        p {
+          color: white;
+        }
+      }
+    }
+  }
+  .c-button {
+    color: #032b56;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0.6em 1em;
+  }
+  .smartWayImg {
+    .smartWayText {
+      margin: 1.5rem 0rem;
+      max-width: 85%;
+      .h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .Insight {
+    padding: 1rem;
+    h2 {
+      margin: 2rem;
+    }
+    .InsightCards {
+      flex-direction: column;
+      gap: 1rem;
+      .InsightCard1 {
+        .card {
+          width: 20rem !important;
+        }
+      }
+      .InsightCard2 {
+        .card {
+          width: 20rem !important;
+        }
+      }
+      .InsightCard3 {
+        .card {
+          width: 20rem !important;
+        }
+      }
+      .InsightCard4 {
+        .card {
+          width: 20rem !important;
+        }
+      }
+    }
+  }
+}

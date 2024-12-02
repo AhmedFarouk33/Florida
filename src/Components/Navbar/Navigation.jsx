@@ -8,10 +8,10 @@ import { NavLink } from "react-router-dom";
 export default function Navigation() {
   return (
     <div>
-      <Navbar expand="lg" className="bg-body-white">
+      <Navbar expand="lg" className="bg-body-white p-0">
         <Container>
           <Link to="/" className="text-decoration-none">
-            <Navbar.Brand className="navbrand">Florida</Navbar.Brand>
+            <Navbar.Brand className="navbrand"><img src="/src/Img/Logo.png" width={'130px'} alt="Florida" /></Navbar.Brand>
           </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

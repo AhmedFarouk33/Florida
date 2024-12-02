@@ -1,11 +1,13 @@
 .navbrand {
-  color: #1665f8 !important;
+  color: #004aad !important;
   font-weight: bolder;
   font-size: x-large ;
 }
 .navLinkbtn {
   text-decoration: none;
-  color: rgb(0, 0, 100);
+  font-size: large;
+  font-weight: bold;
+  color: #004aad;
 }
 .navLinkbtn:hover {
   color: #1665f8 ;
